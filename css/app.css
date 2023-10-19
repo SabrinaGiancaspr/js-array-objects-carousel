@@ -16,11 +16,26 @@ img {
   object-fit: cover;
 }
 
-.carousel-image {
+.carousel-item {
   display: none;
   width: 100%;
   aspect-ratio: 21/9;
   object-fit: cover;
+}
+
+.carousel-item p {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  text-align: end;
+}
+
+.carousel-item h2 {
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+  color: white;
 }
 
 .carousel-container {
@@ -28,6 +43,7 @@ img {
   margin: 0 auto;
   margin-top: 100px;
   position: relative;
+
 }
 
 .prev-button,
@@ -38,11 +54,10 @@ img {
   height: 36px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.8);
-  transform: translateX(-50%);
-  left: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  bottom: 50%;
 }
 
 .prev-button {
