@@ -3,3 +3,58 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 16/11;
+  object-fit: cover;
+}
+
+.carousel-image {
+  display: none;
+  width: 100%;
+  aspect-ratio: 21/9;
+  object-fit: cover;
+}
+
+.carousel-container {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 100px;
+  position: relative;
+}
+
+.prev-button,
+.next-button {
+  border: none;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: translateX(-50%);
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev-button {
+  position: absolute;
+  left: 5px;
+}
+
+.next-button {
+  position: absolute;
+  right: 5px;
+}
+
+.active {
+  display: block;
+}
